@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <!-- quiz app -->
+    <div class="quiz-app">
+
+        <div style="display: flex; align-items: center; justify-content:space-between;
+        border-bottom: 1px solid #333;padding-bottom: 30px;">
+
+            <!-- heading  tag-->
+            <h1>Simple Quiz</h1>
+            <!-- heading  tag-->
+
+            <!-- watch -->
+            <div class="time">
+                <h4 id="time-screen"></h4>
+            </div>
+            <!-- watch -->
+
+        </div>
+
+        <div id="disp">
+            
+        </div>
+
+         <!-- instruction -->
+         <div id="instruction">
+                
+            <h2 class="inst-h2">INSTUCTIONS:</h2>
+
+            <ul class="ul" >
+                <li>Answer all the question</li>
+                <li>Think carefully before you pick an answer</li>
+                <li>Do not waste time on any question</li>
+                <li>If you change your mind on any question you are free to pick another option</li>
+                <li>You have 60 seconds to answer all questions</li>
+            </ul>
+
+            <button id="start-btn" onclick="startquiz()" >Start</button>
+           
+        </div>
+        <!-- instruction -->
+        
+        <div id="btn-div">
+            <button id="previous-btn" onclick="previous()">Previous</button>
+            <button id="submit-btn" onclick="submit()">Submit</button>
+            <button id="next-btn" onclick="next()">Next</button>
+        </div>
+
+    </div>
+
+
+    <div class="submit">
+        <div class="note">
+            <h1 id="result"></h1>
+            <p id="result-messages"></p>
+            <button id="back" onclick="goback()">Start again</button>
+        </div>
+    </div>
+
+    <audio src="/audio/mixkit-conference-audience-clapping-strongly-476.wav" id="Sound" preload="auto"></audio>
+
+    
+    <!-- quiz app -->
+</body>
+<script src="./script.js"></script>
+</html>

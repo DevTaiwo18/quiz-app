@@ -1,0 +1,506 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* 
+============
+============
+BEGINNING OF BODY
+=============
+=============
+ */
+body{
+    background:  #001e4d;
+}
+/* 
+============
+============
+END OF BODY
+=============
+=============
+ */
+
+ /* 
+============
+============
+BEGINNING OF QUIZ APP
+=============
+=============
+ */
+.quiz-app{
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 700px;
+    margin:5em auto 0;
+    border-radius: 10px;
+    padding: 30px;
+}
+/* 
+============
+============
+END OF QUIZ APP
+=============
+=============
+*/
+
+ /* 
+============
+============
+BEGINNING OF HEADING TAG
+=============
+=============
+ */
+.quiz-app h1{
+    font-size: 25px;
+    font-weight: 600;
+    color: #001e4d;
+}
+.ques{
+    font-size: 20px;
+    font-weight: 600;
+    color: #001e4d;
+    padding: 1em;
+}
+.ans{
+    font-size: 18px;
+}
+.qus{
+    margin-left: 0.5rem;
+}
+ /* 
+============
+============
+END OF HEADING TAG
+=============
+=============
+ */
+
+  /* 
+============
+============
+BEGINNING OF time
+=============
+=============
+ */
+.time{
+    height: 3rem;
+    width: 3rem;
+    border: 5px solid #001e4d;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px #001e4d;
+    display: none;
+}
+#time-screen{
+    position: absolute;
+    margin-top: 0.7rem;
+    margin-left: 0.6rem;
+}
+/* 
+============
+============
+END OF time
+=============
+=============
+*/
+
+
+
+ /* 
+============
+============
+BEGINNING OF instruction
+=============
+=============
+ */
+ #instruction{
+    padding: 20px 0;
+}
+ /* 
+============
+============
+END OF instruction
+=============
+=============
+ */
+
+
+  /* 
+============
+============
+BEGINNING OF instructio h2
+=============
+=============
+ */
+ .inst-h2{
+    font-size: 20px;
+    color:#001e4d;
+    font-weight: 600;
+    line-height: 2;
+    text-align: center;
+    text-decoration: underline;
+}
+span{
+    font-size: 20px;
+    color:#001e4d;
+    font-weight: 600;
+    line-height: 2;
+}
+ /* 
+============
+============
+END OF instructio h2
+=============
+=============
+ */
+
+  /* 
+============
+============
+BEGINNING OFul
+=============
+=============
+ */
+ .ul{
+    font-size:16px;
+    color:#001e4d;
+    font-weight: 600;
+    line-height:2;
+    padding-left: 2em;
+    padding-top: 1em;
+}
+ /* 
+============
+============
+END OFul
+=============
+=============
+ */
+
+
+   /* 
+============
+============
+BEGINNING OF start button
+=============
+=============
+ */
+ #start-btn{
+    background-color: #222;
+    color: #fff;
+    font-weight: 500;
+    border:none;
+    padding: 0.7em 3em;
+    text-align: center;
+    margin: 30px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+    display:block;
+    font-size: 16px;
+}
+
+#next-btn{
+    background-color: #222;
+    color: #fff;
+    font-weight: 500;
+    border:none;
+    padding: 0.7em 3em;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 16px;
+}
+
+#submit-btn{
+    background-color: #222;
+    color: #fff;
+    font-weight: 500;
+    border:none;
+    padding: 0.7em 3em;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 16px;
+}
+#previous-btn{
+    background-color: #222;
+    color: #fff;
+    font-weight: 500;
+    border:none;
+    padding: 0.7em 3em;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 16px;
+}
+
+#btn-div{
+    display: none;
+    margin-top: 2rem;
+    margin-left: 6rem;
+}
+ /* 
+============
+============
+END OF start button
+=============
+=============
+ */
+
+.submit{
+    position: absolute;
+    transform: translateY(-83%);
+    background-color: rgba(0, 0, 0, 0.46);
+    width: 100%;
+    transition: all 0.9s ease;
+    height: 100vh;
+    display: none;
+}
+.note{
+    top:30%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 2rem 2rem 2rem 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+}
+#result-messages{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+#back{
+    background-color: #222;
+    color: #fff;
+    font-weight: 500;
+    border:none;
+    padding: 0.7em 3em;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 16px;
+    margin-left: 7rem;
+    margin-top: 2rem;
+}
+
+
+
+
+
+
+ 
+
+
+/* media query */
+
+@media (max-width:1326px) {
+
+/* 
+============
+============
+BEGINNING OF QUIZ APP
+=============
+=============
+ */
+.quiz-app{
+    margin:4em auto 0;
+}
+/* 
+============
+============
+END OF QUIZ APP
+=============
+=============
+*/
+
+}
+
+@media (max-width:500px) {
+
+/* 
+============
+============
+BEGINNING OF QUIZ APP
+=============
+=============
+ */
+.quiz-app{
+    margin:3em auto 0;
+}
+/* 
+============
+============
+END OF QUIZ APP
+=============
+=============
+*/
+
+/* 
+============
+============
+BEGINNING OFul
+=============
+=============
+ */
+ .ul{
+    font-size:14px;
+    color:#001e4d;
+    font-weight: 600;
+    line-height:2;
+    padding-left: 1em;
+    padding-top: 1em;
+}
+ /* 
+============
+============
+END OFul
+=============
+=============
+ */
+
+
+   /* 
+============
+============
+BEGINNING OF start button
+=============
+=============
+ */
+ #start-btn{
+    padding: 10px 30px;
+    font-size: 14px;
+
+}
+ /* 
+============
+============
+END OF start button
+=============
+=============
+ */
+
+
+ /* 
+============
+============
+BEGINNING OF QUIZ APP
+=============
+=============
+ */
+.quiz-app{
+margin:4em auto 0;
+padding: 30px 30px 20px 30px;
+}
+/* 
+============
+============
+END OF QUIZ APP
+=============
+=============
+*/
+
+}
+
+@media (max-width:402px) {
+    
+    /* 
+============
+============
+BEGINNING OF QUIZ APP
+=============
+=============
+ */
+.quiz-app{
+    margin:4em auto 0;
+    padding: 40px 30px 20px 30px;
+}
+/* 
+============
+============
+END OF QUIZ APP
+=============
+=============
+*/
+
+/* 
+============
+============
+BEGINNING OFul
+=============
+=============
+ */
+ .ul{
+    font-size:13px;
+    color:#001e4d;
+    font-weight: 600;
+    line-height:2;
+    padding-left: 0.5em;
+    padding-top: 1em;
+}
+ /* 
+============
+============
+END OFul
+=============
+=============
+ */
+
+}
+
+@media (max-width:350px) {
+        /* 
+============
+============
+BEGINNING OF QUIZ APP
+=============
+=============
+ */
+.quiz-app{
+    margin:3em auto 0;
+    padding: 40px 30px 20px 30px;
+}
+/* 
+============
+============
+END OF QUIZ APP
+=============
+=============
+*/
+
+/* 
+============
+============
+BEGINNING OFul
+=============
+=============
+ */
+ .ul{
+    font-size:12px;
+    color:#001e4d;
+    font-weight: 600;
+    line-height:2;
+    padding-left: 0.5em;
+    padding-top: 1em;
+}
+ /* 
+============
+============
+END OFul
+=============
+=============
+ */
+}
+
